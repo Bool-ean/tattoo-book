@@ -2,6 +2,7 @@
 htmx-gorilla-chat-app
 chatapp
 main
+tattoo-book
 
 # Go test binary
 *.test

@@ -1,2 +1,1 @@
-following along with https://www.youtube.com/watch?v=NPq3d2HkxWU&list=PLmOSvu1jMZrcJjRAJrwBsBHBf_NVpz0mt 
-currently at 23:12
+Currently building a little webapp to help tattoo artists communicate with clients, book appointments, and accept payments.
