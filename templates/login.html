@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+  <!-- HTMX Websockets extension https://htmx.org/extensions/web-sockets/ -->
+  <script src="https://unpkg.com/htmx.org/dist/ext/ws.js"></script>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+
+<body>
+  <div id="login-box">
+    <form
+      hx-post="/login"
+      hx-target="#login-error"
+      hx-swap="outerHTML"
+      class="space-y-4"
+    >
+      <div>
+        <label for="un">Username:</label>
+        <input
+          type="text"
+          id="un"
+          name="un"
+          class="border border-gray-400 p-2"
+        >
+      </div>
+
+      <div>
+        <label for="pw">Password:</label>
+        <input
+          type="password"
+          id="pw"
+          name="pw"
+          class="border border-gray-400 p-2"
+        >
+      </div>
+
+      <input
+        type="submit"
+        value="Submit"
+        class="bg-blue-500 text-white px-4 py-2 rounded transition active:scale-95 active:bg-blue-600"
+      >
+    </form>
+
+    <div id="login-error" class="mt-4"></div>
+  </div>
+</body>
+
+</html>

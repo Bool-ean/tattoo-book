@@ -1,0 +1,16 @@
+1. Add User ID/PW to client (done)
+2. Add login screen (done)
+3. Serve login screen (done)
+TODO:
+handle login:
+  check is username exists
+  return error if it does
+  use hmtx to display error
+  move serve functions below go Hub.Run() (done)
+  PUT USERNAME CREATION IN servews
+  put hub.lock on usernametaken function
+  h.RLock()
+	defer h.RUnlock()
+
+TODO (much later):
+  make login root
